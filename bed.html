@@ -1,261 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/bed.css">
-</head>
-<body>
-    <header>
-    <div class="heading">
-    <div class="mouka-logo">
-    <img src="assests/logo.svg" class="">
-    </div>   
-    <div class="mouka-nav">
-    <nav class="all-nav">
-        <ul class="navlinks">
-            <li class="nav-item"><h5>HOME</h5></li>
-            <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
-            <li class="nav-item"><h5>CONTACT</h5></li>   
-            <li class="dropdown">
-                <h5 class ="our-products">OUR PRODUCTS
-                    <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
-                    </svg>
-                </h5>
-                <ul class="dropdown-menu">
-                    <li><a href="bed.html">Bed</a></li>
-                    <li><a href="#">Pillows</a></li>
-                    <li><a href="#">Duvet</a></li>
-                    <li><a href="#">Bedsheets</a></li>
-                </ul>
-            </li>
-        </ul>       
-        <button class="button1"><h3>Buy Now</h3></button>
-        </nav>
-        <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        </div>  
-        <div class="auth">
-        <a href="login.html"><img src="assests/user.svg" title= "Log-In"></a>
-        </div>
-    </div>
-    </div>
-        
-    </div>
-</header>
- <main>
-    <div class="page-hero">
-      <div class="container">
-        <h1>Choose Your Perfect Sleep</h1>
-        <p>Discover Mouka mattresses in different categories — Economy to Luxury. Find the right comfort, support and size for your needs.</p>
-      </div>
-    </div>
-
-    <section class="title">
-      <div class="container-title">
-
-        <h2 class="section-title">Our Mattress Collection</h2>
-
-      <div class="products-grid">
-
-          <!-- Economy -->
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/nojnijpooybgiyycyaid.webp" alt="Mouka Comfy">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Mouka Comfy</h3>
-              <p class="product-desc">Low-density foam mattress — ideal for students, kids or guest rooms (2.5ft x 6  -  4.5ft x 6).</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from">From - To</span>
-                  <div class="price">₦34,500  -  ₦250,000</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/bed.css">
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <div class="mouka-logo">
+                    <img src="assests/logo.svg" class="">
+                </div>   
+                <div class="mouka-nav">
+                    <nav class="all-nav">
+                        <ul class="navlinks">
+                            <li class="nav-item"><a href="index.html"><h5>HOME</h5></a></li>
+                            <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
+                            <li class="nav-item"><a href="https://wa.me/2348147799683"><h5>CONTACT</h5></a></li>   
+                            <li class="dropdown">
+                                <h5 class ="our-products">OUR PRODUCTS
+                                    <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+                                    </svg>
+                                </h5>
+                                <ul class="dropdown-menu">
+                                    <li><a href="bed.html">Bed</a></li>
+                                    <li><a href="pillows.html">Pillows</a></li>
+                                    <li><a href="linens.html">Bed Linens</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul> 
+                        <button class="button1"><h3>Buy Now</h3></button>
+                    </nav>  
+                </div>  
+                <div class="auth">
+                    <a href="login.html"><img src="assests/user.svg" title= "Log-In"></a>
+                    <div class="hamburger" onclick="showSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
                 </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
+                <div class="sidebar-wrapper">
+                    <ul class="sidebar">
+                        <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                        <a href="index.html"><li class="nav-item"><h5>HOME</h5></li></a>
+                        <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
+                        <a href="https://wa.me/2348147799683"><li class="nav-item"><h5>CONTACT</h5></li></a>   
+                        <li class="dropdown">
+                            <h5 class ="our-products">OUR PRODUCTS
+                                <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+                                </svg>
+                            </h5>
+                            <ul class="dropdown-menu">
+                                <li><a href="bed.html">Bed</a></li>
+                                <li><a href="pillows.html">Pillows</a></li>
+                                <li><a href="linens.html">Bed Linens</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>       
+                    <div class="moukalogo">
+                        <img src="assests/logo.svg">
+                    </div> 
+                </div>      
+                <!-- </div> -->
             </div>
-          </div>
+        </header> 
 
-          <!-- Mainstream -->
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/votfkotm3fjqkb0masze.webp" alt="Mouka Flora">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Mouka Flora</h3>
-              <p class="product-desc">Medium-firm density, damask cover, great value & durability (2.5ft x 6 - 7ft x 6).</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from">From - To</span>
-                  <div class="price">₦35,000 - ₦248,000</div>
+        <main>
+            <div class="page-hero">
+                <div class="container">
+                    <h1>Choose Your Perfect Sleep</h1>
+                    <p>Discover Mouka mattresses in different categories — Economy to Luxury. Find the right comfort, support and size for your needs.</p>
                 </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
             </div>
-          </div>
 
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/Mouka-Super-Flora.iguodala-store.jpg" alt="Mouka Legend">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Mouka Superflora</h3>
-              <p class="product-desc">Popular medium-density foam — balanced comfort & support.(4.5ft x 6 - 7ft x 6)</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from">From - To</span>
-                  <div class="price">₦120,000 - ₦248,000</div>
-                </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
+            <section class="title">
+                <div class="container-title">
+                    <h2 class="section-title">Our Mattress Collection</h2>
 
-          <!-- Wellbeing / Orthopaedic -->
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/xwgg8gcse2znd3ivlkpe (1).webp" alt="Mouka Regal">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Mouka Wellbeing Regal (orthopaedic)</h3>
-              <p class="product-desc">Orthopaedic support, high-density foam — excellent for back pain relief.(4.5ft x 6 - 6ft x 6)</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from">From - To</span>
-                  <div class="price">₦170,000 - ₦495,000</div>
-                </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
+                    <div class="products-grid">
+                        <!-- Economy -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/nojnijpooybgiyycyaid.webp" alt="Mouka Comfy">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mouka Comfy</h3>
+                                <p class="product-desc">Low-density foam mattress — ideal for students, kids or guest rooms (2.5ft x 6  -  4.5ft x 6).</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from">From - To</span>
+                                        <div class="price">₦34,500  -  ₦250,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
 
-          <!-- Luxury / Spring -->
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/catalog_web_V-6.webp" alt="Mouka Royal Pillow Top">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Royal Pillow Top Luxury Spring</h3>
-              <p class="product-desc">Pocket spring + luxury pillow top — ultimate comfort & zero motion transfer.</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from">From</span>
-                  <div class="price">₦362,000</div>
-                </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
+                        <!-- Mainstream -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/votfkotm3fjqkb0masze.webp" alt="Mouka Flora">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mouka Flora</h3>
+                                <p class="product-desc">Medium-firm density, damask cover, great value & durability (2.5ft x 6 - 7ft x 6).</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from">From - To</span>
+                                        <div class="price">₦35,000 - ₦248,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
 
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/spring.webp" alt="Mouka Mondeo">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Mondeo Spring Firm</h3>
-              <p class="product-desc">Firm orthopaedic spring mattress — great edge support & durability.(6ft x 6)</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from"></span>
-                  <div class="price">₦335,000</div>
-                </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/mouka-mondeo-spring-mattress-l-6ft-x-w-6ft-x-h-10-5700333240417.jpg" alt="Mouka Mondeo">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Mondeo Spring Firm</h3>
-              <p class="product-desc">Firm orthopaedic spring mattress — great edge support & durability.(6ft x 6)</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from"></span>
-                  <div class="price">₦396,000</div>
-                </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/h7exz5zrlcbwrq8x4ft1.webp" alt="Mouka Mondeo">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Regina Wellbeing(Semi Orth)</h3>
-              <p class="product-desc">Supportive but not rock-hard, great for everyday comfort with back/neck/joint relief.(4.5ft x 6 - 6ft x 6)</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from">From - To</span>
-                  <div class="price">₦170,000 - ₦310,000</div>
-                </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-img">
-              <img src="assests/MONDEO-SPRING-MATTRESS.jpeg" alt="Mouka Mondeo">
-            </div>
-            <div class="product-info">
-              <h3 class="product-title">Mondeo Spring Plus</h3>
-              <p class="product-desc">Wake up refreshed...</p>
-              <div class="product-meta">
-                <div>
-                  <span class="from">From - To</span>
-                  <div class="price">₦295,000 - 345,000</div>
-                </div>
-                <a href="#" class="btn">Shop Now</a>
-              </div>
-            </div>
-          </div>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/Mouka-Super-Flora.iguodala-store.jpg" alt="Mouka Legend">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mouka Superflora</h3>
+                                <p class="product-desc">Popular medium-density foam — balanced comfort & support.(4.5ft x 6 - 7ft x 6)</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from">From - To</span>
+                                        <div class="price">₦120,000 - ₦248,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
 
-        </div>
+                        <!-- Wellbeing / Orthopaedic -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/xwgg8gcse2znd3ivlkpe (1).webp" alt="Mouka Regal">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mouka Wellbeing Regal (orthopaedic)</h3>
+                                <p class="product-desc">Orthopaedic support, high-density foam — excellent for back pain relief.(4.5ft x 6 - 6ft x 6)</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from">From - To</span>
+                                        <div class="price">₦170,000 - ₦495,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
 
-      </div>
-    </section>
+                        <!-- Luxury / Spring -->
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/catalog_web_V-6.webp" alt="Mouka Royal Pillow Top">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Royal Pillow Top Luxury Spring</h3>
+                                <p class="product-desc">Pocket spring + luxury pillow top — ultimate comfort & zero motion transfer.</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from">From</span>
+                                        <div class="price">₦362,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
 
-    <footer class="mouka-footer">
-        <div class="footer-content">
-        <div class="footer-brand">
-            <h2>MOUKA</h2>
-            <p>Discover the pinnacle of personalized comfort, curated exclusively for you.</p>
-        </div>
-        <div class="footer-links">
-        <h3>Our Products</h3>
-            <ul>
-                <li><a href="#">Mattresses</a></li>
-                <li><a href="#">Pillows</a></li>
-                <li><a href="#">Bedsheets</a></li>
-                <li><a href="#">Duvets</a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-        <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-        <h3>Contact Us</h3>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        </div>
-    <div class="footer-bottom">
-            <p>&copy; 2026 Mouka Limited. All rights reserved. | Made for Comfort.</p>
-        </div>
-    </footer>
-</body>
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/spring.webp" alt="Mouka Mondeo">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mondeo Spring Firm</h3>
+                                <p class="product-desc">Firm orthopaedic spring mattress — great edge support & durability.(6ft x 6)</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from"></span>
+                                        <div class="price">₦335,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/mouka-mondeo-spring-mattress-l-6ft-x-w-6ft-x-h-10-5700333240417.jpg" alt="Mouka Mondeo">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mondeo Spring Firm</h3>
+                                <p class="product-desc">Firm orthopaedic spring mattress — great edge support & durability.(6ft x 6)</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from"></span>
+                                        <div class="price">₦396,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/h7exz5zrlcbwrq8x4ft1.webp" alt="Mouka Mondeo">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Regina Wellbeing(Semi Orth)</h3>
+                                <p class="product-desc">Supportive but not rock-hard, great for everyday comfort with back/neck/joint relief.(4.5ft x 6 - 6ft x 6)</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from">From - To</span>
+                                        <div class="price">₦170,000 - ₦310,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="assests/MONDEO-SPRING-MATTRESS.jpeg" alt="Mouka Mondeo">
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-title">Mondeo Spring Plus</h3>
+                                <p class="product-desc">Wake up refreshed...</p>
+                                <div class="product-meta">
+                                    <div>
+                                        <span class="from">From - To</span>
+                                        <div class="price">₦295,000 - 345,000</div>
+                                    </div>
+                                    <a href="#" class="btn">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mouka-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>MOUKA</h2>
+                    <p>Discover the pinnacle of personalized comfort, curated exclusively for you.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="bed.html">Mattresses</a></li>
+                        <li><a href="pillows.html">Pillows</a></li>
+                        <li><a href="linens.html">Bed Linens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Policy</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li class="socials">
+                            <img src="assests/whatsappV4.svg" height="20" alt="">
+                            <a href="https://wa.me/2348147799683">08147799683</a></li>
+                        <li class="socials">
+                            <img src="assests/phone--voice.svg" height="20" alt="">
+                            <a href="tel:08063917752">08063917752</a></li>
+                        <li class="socials">
+                            <img src="assests/facebook-logo-realistic-social-media-icon-logotype-free-free-png.webp" height="25" alt="">
+                            <a href="https://www.facebook.com/moukamattresses">Mouka</a>
+                        </li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mouka Limited. All rights reserved. | Made for Comfort.</p>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
 </html>

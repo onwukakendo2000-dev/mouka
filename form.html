@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #ebefeb , #48d56e 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.mouka-header {
+  text-align: center;
+  /* margin-bottom: 35px; */
+  
+}
+
+.mouka-logo-text {
+  color: #1d4d2b;
+  font-size: 2.8rem;
+  font-weight: 900;
+  /* padding: 10px ; */
+}
+
+.mouka-tag {
+  color: #414040;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin-bottom: 1.9rem;
+  color: #1d4d2b;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 1.2rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: black;
+  font-size: 1.0rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.pass-container {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  border: none;
+  background-color: white;
+  margin-bottom: 1.2rem;
+}
+
+.pass-container input {
+  background-color: inherit;
+  width: 100%;
+  margin-top: 0;
+}
+
+.pass-container .showPassword {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-utilities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 0.85rem;
+  
+}
+
+.check-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.check-text {
+  margin-left: 6px;
+  color: black; 
+}
+.check-text a{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #1d4d2b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.check-container a {
+  margin-left: 30px;
+  color: #32e166;
+  font-weight: bold;
+
+}
+
+.form-utility {
+  margin-top: 15px;   
+}
+
+.check-container a button {
+  background-color: #1d4d2b;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+.check-container a button:hover {
+  background-color: #268242;
+}
+
+.submit-btn:hover {
+  background-color: #268242;
+}
+
+.size-6 {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="form-container">
+    <form class="signup-form" id="myform">
+        <div class="mouka-header">
+            <h1 class="mouka-logo-text">Mouka</h1>
+            <p class="mouka-tag">Adding comfort to life</p>
+        </div>
+    <h2>REGISTER</h2>
+    
+    <div class="input-group">
+      <label for="username"><strong>Full-Name</strong></label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email"><strong>Email</strong></label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="password"><strong>Password</strong></label>
+        <div class="pass-container">
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+          <div class="showPassword"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+            </svg>
+          </div>
+        </div>
+  </div>
+    <div class="input-group">
+      <label for="password"><strong></strong></label>
+        <div class="pass-container">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            <div class="showPassword"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+        </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-group">
+      <label for="phone"><strong>Phone Number</strong></label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+    </div>
+
+     <div class="form-utilities">
+        <label class="check-container">
+            <input type="checkbox"> 
+            <span class="check-text"> I Accept Terms & Conditions.</span>
+        </label>
+        
+    </div>
+    <a href="login.html"><button type="submit" class="submit-btn">Register An Account</button></a>
+     <div class="form-utility">
+      <a href="login.html"><span class="check-text">Already have an account?</a></span>
+        <!-- <label class="check-container">
+            <input type="checkbox"> 
+            <span class="check-text">Already have an account?
+            <a href="login.html"><button>Log In</button></a>
+        </label>
+         -->
+    </div> 
+    <p class="msg"></p>
+    </form>
+    </div>
+<script>
+        const form = document.querySelector('#myform');
+        const message = document.querySelector('.msg');
+        const showPassword = document.querySelector('.showPassword');
+
+        const usernameRegex = /^[A-Za-z0-9_]{3,16}$/;
+        const emailRegex = /^[A-Za-z0-9/._-]+@[A-Za-z0-9_-]+\.[A-Za-z]{2,}$/;
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@!*?#$%&])[A-Za-z0-9@!*?#$%&]{8,}$/;
+        const phoneRegex = /^(?:\+234|0)[789][01]\d{8}$/;
+
+        function validateUsername(username) {
+            return usernameRegex.test(username); // true or false
+        }
+
+        function validateEmail(email) {
+            return emailRegex.test(email);
+        }
+
+        function validatePassword(password) {
+            return passwordRegex.test(password);
+        }
+
+        function validatePhone(phone) {
+            return phoneRegex.test(phone);
+        }
+        showPassword.addEventListener('click', () => {
+            const inputPass = document.querySelector('#password');
+            const attr = inputPass.getAttribute('type');
+            if (attr === 'password') {
+                inputPass.setAttribute('type','text');
+                showPassword.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>';
+            } else {
+                inputPass.setAttribute('type','password')
+                showPassword.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>';
+            }
+            
+        });
+ 
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const username = form.elements['username'].value;
+            const email = form.elements['email'].value;
+            const password = form.elements['password'].value;
+            const phone = form.elements['phone'].value;
+
+            message.style.color = 'red';
+
+            if (!validateUsername(username)) {
+                message.textContent = 'Username not valid';    
+            } else if (!validateEmail(email)) {
+                message.textContent = 'Email not valid';    
+            } else if (!validatePassword(password)) {
+                message.textContent = 'Min. password length is 8 characters and must contain at least 1 uppercase, 1 lowercase letter, 1 digit, 1 special character';    
+            } else if (!validatePhone(phone)) {
+                message.textContent = 'Phone number not valid';    
+            } else {
+                message.textContent = 'User created succesfully! You should get redirected in few seconds.';
+                message.style.color = 'green';
+            }
+        })
+</script> 
+</body>
+</html>

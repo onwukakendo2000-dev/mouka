@@ -9,118 +9,181 @@
 </head>
 <body>
     <header>
-    <div class="heading">
-    <div class="mouka-logo">
-    <img src="assests/logo.svg" class="">
-    </div>   
-    <div class="mouka-nav">
-    <nav class="all-nav">
-        <ul class="navlinks">
-            <li class="nav-item"><h5>HOME</h5></li>
-            <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
-            <li class="nav-item"><h5>CONTACT</h5></li>   
-            <li class="dropdown">
-                <h5 class ="our-products">OUR PRODUCTS
-                    <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+        <div class="heading">
+            <div class="mouka-logo">
+                <img src="assests/logo.svg" class="">
+            </div>   
+            <div class="mouka-nav">
+                <nav class="all-nav">
+                    <ul class="navlinks">
+                        <li class="nav-item"><a href="index.html"><h5>HOME</h5></a></li>
+                        <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
+                        <li class="nav-item"><a href="https://wa.me/2348147799683"><h5>CONTACT</h5></a></li>   
+                        <li class="dropdown">
+                            <h5 class ="our-products">OUR PRODUCTS
+                                <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+                                </svg>
+                            </h5>
+                            <ul class="dropdown-menu">
+                                <li><a href="bed.html">Bed</a></li>
+                                <li><a href="pillows.html">Pillows</a></li>
+                                <li><a href="linens.html">Bed Linens</a></li>                           
+                            </ul>
+                        </li>
+                    </ul>   
+                <button class="button1"><h3>Buy Now</h3></button>
+                </nav>
+                <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                </h5>
-                <ul class="dropdown-menu">
-                    <li><a href="bed.html">Bed</a></li>
-                    <li><a href="#">Pillows</a></li>
-                    <li><a href="#">Duvet</a></li>
-                    <li><a href="#">Bedsheets</a></li>
-                </ul>
-            </li>
-        </ul>       
-        <button class="button1"><h3>Buy Now</h3></button>
-        </nav>
-        <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        </div>  
-        <div class="auth">
-        <a href="login.html"><img src="assests/user.svg" title= "Log-In"></a>
+                </div>  
+                    <div class="auth">
+                        <a href="login.html"><img src="assests/user.svg" title= "Log-In"></a>
+                </div>
+            </div>
+        <!-- </div> -->           
         </div>
-    </div>
-    </div>
-        
-    </div>
-</header>
+    </header>
 <main>
-    <section class="mouka-auth">
-    <div class="mouka-login-box">
-        <div class="mouka-header">
-            <h1 class="mouka-logo-text">Mouka</h1>
-            <p class="mouka-tag">Adding comfort to life</p>
+    <form class="mouka-auth" id="myform">
+        <div class="mouka-login-box">
+            <div class="mouka-header">
+                <h1 class="mouka-logo-text">Mouka</h1>
+                <p class="mouka-tag">Adding comfort to life</p>
+            </div>
+
+    <form class="mouka-form-content">
+        <h2 class="form-heading">Sign In</h2>           
+        <div class="field-wrapper">
+            <label for="user-email">Email Address</label>
+            <input type="email" id="user-email" name="email" placeholder="Email" required>
         </div>
 
-        <form class="mouka-form-content">
-            <h2 class="form-heading">Sign In</h2>
-            
-            <div class="field-wrapper">
-                <label for="user-email">Email Address</label>
-                <input type="email" id="user-email" name="email" placeholder="Email" required>
+        <div class="field-wrapper">
+            <label for="password"><strong>Password</strong></label>
+            <div class="pass-container">
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <div class="showPassword"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>
+                </div>
             </div>
+        </div>
 
-            <div class="field-wrapper">
-                <label for="user-pass">Password</label>
-                <input type="password" id="user-pass" name="password" placeholder="Enter password" required>
-            </div>
-
-            <div class="form-utilities">
-                <label class="check-container">
-                    <input type="checkbox"> 
+        <div class="form-utilities">
+            <label class="check-container">
+                <input type="checkbox"> 
                     <span class="check-text">Keep me signed in</span>
-                </label>
-                <a href="#" class="accent-link">Forgot password?</a>
-            </div>
+            </label>
+            <a href="#" class="accent-link">Forgot password?</a>
+        </div>
 
-            <a href="index.html"><button type="submit" class="submit-button">LOG IN</button></a>
-        </form>
+        <button type="submit" class="submit-button">LOG IN</button>
+    </form>
 
         <div class="footer-note">
-            <p>New to Mouka? <a href="#" class="accent-link">Create an account</a></p>
+            <p>New to Mouka? <a href="form.html" class="accent-link">Create an account</a></p>          
         </div>
-    </div>
-</section>
+        </div>
+        <p id="msg"></p>
 </main>
     <footer class="mouka-footer">
         <div class="footer-content">
-        <div class="footer-brand">
-            <h2>MOUKA</h2>
-            <p>Discover the pinnacle of personalized comfort, curated exclusively for you.</p>
-        </div>
-        <div class="footer-links">
+            <div class="footer-brand">
+                <h2>MOUKA</h2>
+                <p>Discover the pinnacle of personalized comfort, curated exclusively for you.</p>
+            </div>
+    <div class="footer-links">
         <h3>Our Products</h3>
-            <ul>
-                <li><a href="#">Mattresses</a></li>
-                <li><a href="#">Pillows</a></li>
-                <li><a href="#">Bedsheets</a></li>
-                <li><a href="#">Duvets</a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-        <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
+        <ul>
+            <li><a href="bed.html">Mattresses</a></li>
+            <li><a href="pillows.html">Pillows</a></li>
+            <li><a href="linens.html">Bed Linens</a></li>
+        </ul>
+    </div>
+    <div class="footer-links">
+        <h3>Policy</h3>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+        </ul>
+    </div>
+    <div class="footer-links">
         <h3>Contact Us</h3>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        </div>
+        <ul>
+            <li class="socials">
+                <img src="assests/whatsappV4.svg" height="20" alt="">
+                <a href="https://wa.me/2348147799683">08147799683</a></li>
+            <li class="socials">
+                <img src="assests/phone--voice.svg" height="20" alt="">
+                <a href="tel:08063917752">08063917752</a></li>
+            <li class="socials">
+                <img src="assests/facebook-logo-realistic-social-media-icon-logotype-free-free-png.webp" height="25" alt="">
+                <a href="https://www.facebook.com/moukamattresses">Mouka</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    </div>
     <div class="footer-bottom">
-            <p>&copy; 2026 Mouka Limited. All rights reserved. | Made for Comfort.</p>
-        </div>
+        <p>&copy; 2026 Mouka Limited. All rights reserved. | Made for Comfort.</p>
+    </div>
     </footer>
+    <script>
+        const form = document.querySelector('#myform');
+        const message = document.querySelector('.msg');
+        const showPassword = document.querySelector('.showPassword');
+
+        // const usernameRegex = /^[A-Za-z0-9_]{3,16}$/;
+        const emailRegex = /^[A-Za-z0-9/._-]+@[A-Za-z0-9_-]+\.[A-Za-z]{2,}$/;
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@!*?#$%&])[A-Za-z0-9@!*?#$%&]{8,}$/;
+        // const phoneRegex = /^(?:\+234|0)[789][01]\d{8}$/;
+
+
+        function validateEmail(email) {
+            return emailRegex.test(email);
+        }
+
+        function validatePassword(password) {
+            return passwordRegex.test(password);
+        }
+
+        showPassword.addEventListener('click', () => {
+            const inputPass = document.querySelector('#password');
+            const attr = inputPass.getAttribute('type');
+            if (attr === 'password') {
+                inputPass.setAttribute('type','text');
+                showPassword.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>';
+            } else {
+                inputPass.setAttribute('type','password')
+                showPassword.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" /></svg>';
+            }
+            
+        });
+ 
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // const username = form.elements['username'].value;
+            const email = form.elements['email'].value;
+            const password = form.elements['password'].value;
+            // const phone = form.elements['phone'].value;
+
+            message.style.color = 'red';
+   
+             if (!validateEmail(email)) {
+                message.textContent = 'Email not valid';    
+            } else if (!validatePassword(password)) {
+                message.textContent = 'Min. password length is 8 characters and must contain at least 1 uppercase, 1 lowercase letter, 1 digit, 1 special character';    
+            }     
+             else {
+                message.textContent = 'User created succesfully! You should get redirected in few seconds.';
+                message.style.color = 'green';
+            }
+        })
+</script> 
 </body>
 </html>

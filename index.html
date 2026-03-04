@@ -1,362 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mouka</title>
-    <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-<header>
-    <div class="heading">
-    <div class="mouka-logo">
-    <img src="assests/logo.svg" class="">
-    </div>   
-    <div class="mouka-nav">
-    <nav class="all-nav">
-        <ul class="navlinks">
-            <li class="nav-item"><h5>HOME</h5></li>
-            <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
-            <li class="nav-item"><h5>CONTACT</h5></li>   
-            <li class="dropdown">
-                <h5 class ="our-products">OUR PRODUCTS
-                    <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
-                    </svg>
-                </h5>
-                <ul class="dropdown-menu">
-                    <li><a href="bed.html">Bed</a></li>
-                    <li><a href="pillows.html">Pillows</a></li>
-                    <li><a href="#">Duvet</a></li>
-                    <li><a href="#">Bedsheets</a></li>
-                </ul>
-            </li>
-        </ul>       
-        <button class="button1"><h3>Buy Now</h3></button>
-        </nav>
-        <div class="hamburger"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        </div>  
-        <div class="auth">
-        <a href="login.html"><img src="assests/user.svg" title= "Log-In"></a>
-        </div>
-    </div>
-    </div>
-        
-    </div>
-</header>
-<main>
-    <section class="hero" id="home">
-        <div class="hero-text">
-        <h1>Better Sleep,<br>Better Life.</h1>
-        <p>For over 60 years, Mouka has been the heart of Nigerian homes, providing the foundation for a restful night.</p>
-        <a href="#products" class="btn-gold">Explore Products</a>
-        </div>
-    </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mouka</title>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <div class="mouka-logo">
+                    <img src="assests/logo.svg" class="">
+                </div>   
+                <div class="mouka-nav">
+                    <nav class="all-nav">
+                        <ul class="navlinks">
+                            <li class="nav-item"><a href="index.html"><h5>HOME</h5></a></li>
+                            <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
+                            <li class="nav-item"><a href="https://wa.me/2348147799683"><h5>CONTACT</h5></a></li>   
+                            <li class="dropdown">
+                                <h5 class ="our-products">OUR PRODUCTS
+                                    <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+                                    </svg>
+                                </h5>
+                                <ul class="dropdown-menu">
+                                    <li><a href="bed.html">Bed</a></li>
+                                    <li><a href="pillows.html">Pillows</a></li>
+                                    <li><a href="linens.html">Bed Linens</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul> 
+                        <button class="button1"><h3>Buy Now</h3></button>
+                    </nav>  
+                </div>  
+                <div class="auth">
+                    <a href="login.html"><img src="assests/user.svg" title= "Log-In"></a>
+                    <div class="hamburger" onclick="showSidebar()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="sidebar-wrapper">
+                    <ul class="sidebar">
+                        <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                        <a href="index.html"><li class="nav-item"><h5>HOME</h5></li></a>
+                        <li class="nav-item"><a href="#About"><h5>ABOUT</h5></a></li>
+                        <a href="https://wa.me/2348147799683"><li class="nav-item"><h5>CONTACT</h5></li></a>   
+                        <li class="dropdown">
+                            <h5 class ="our-products">OUR PRODUCTS
+                                <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-pic"><path d="m7 1.5-2.976 3L1 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ></path>
+                                </svg>
+                            </h5>
+                            <ul class="dropdown-menu">
+                                <li><a href="bed.html">Bed</a></li>
+                                <li><a href="pillows.html">Pillows</a></li>
+                                <li><a href="linens.html">Bed Linens</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>       
+                    <div class="moukalogo">
+                        <img src="assests/logo.svg">
+                    </div> 
+                </div>      
+                <!-- </div> -->
+            </div>
+        </header>
 
-    <section class="stats-bar">
-    <div class="stat-card">
-        <h3>60+</h3>
-        <p>Years of Excellence</p>
-    </div>
-    <div class="stat-card">
-        <h3>10M+</h3>
-        <p>Happy Sleepers</p>
-    </div>
-    <div class="stat-card">
-        <h3>5 Years</h3>
-        <p>Core Warranty</p>
-    </div>
-    <div class="stat-card">
-        <h3>24h</h3>
-        <p>Delivery in all States</p>
-    </div>
-    </section>
-    <section class="features-section">
-        <div class="feature-card">
-        <div class="icon-circle">
-        <img src="assests/feature-icon-comfort.svg" alt="">
-        </div>
-        <h3>Perfected Design</h3>
-        <p>Every material we use in the design of our products is carefully sourced and selected for its unique properties.</p>
-        </div>
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-text">
+                    <h1>Better Sleep,<br>Better Life.</h1>
+                    <p>For over 60 years, Mouka has been the heart of Nigerian homes, providing the foundation for a restful night.</p>
+                    <a href="#products" class="btn-gold">Explore Products</a>
+                </div>
+            </section>
 
-        <div class="feature-card">
-        <div class="icon-circle">
-        <img src="assests/feature-icon-support.svg" alt="">
-        </div>
-        <h3>Advanced Technology</h3>
-        <p>Our innovative technology ensures that every one of our mattresses is cool and comfortable for your use.</p>
-        </div>
+            <section class="stats-bar">
+                <div class="stat-card">
+                    <h3>60+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-card">
+                    <h3>10M+</h3>
+                    <p>Happy Sleepers</p>
+                </div>
+                <div class="stat-card">
+                    <h3>5 Years</h3>
+                    <p>Core Warranty</p>
+                </div>
+                <div class="stat-card">
+                    <h3>24h</h3>
+                    <p>Delivery in all States</p>
+                </div>
+            </section>
+            <section class="features-section">
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img src="assests/feature-icon-comfort.svg" alt="">
+                    </div>
+                    <h3>Perfected Design</h3>
+                    <p>Every material we use in the design of our products is carefully sourced and selected for its unique properties.</p>
+                </div>
 
-        <div class="feature-card">
-        <div class="icon-circle">
-        <img src="assests/feature-icon-eco.svg" alt="">
-        </div>
-        <h3>Top Quality</h3>
-        <p>Everything we do at Mouka is done with the consumer in mind, to offer the best products without compromising quality.</p>
-        </div>
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img src="assests/feature-icon-support.svg" alt="">
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>Our innovative technology ensures that every one of our mattresses is cool and comfortable for your use.</p>
+                </div>
 
-        <div class="feature-card">
-        <div class="icon-circle">
-        <img src="assests/feature-superb-comfort.svg" alt="">
-        </div>
-        <h3>Superb Comfort</h3>
-        <p>Because everyone is unique, we have created various products to suit different body types, comfort levels, and budgets.</p>
-        </div>
-    </section>
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img src="assests/feature-icon-eco.svg" alt="">
+                    </div>
+                    <h3>Top Quality</h3>
+                    <p>Everything we do at Mouka is done with the consumer in mind, to offer the best products without compromising quality.</p>
+                </div>
 
-    <section class="about-mouka" id="About">
-        <div class="container-about-mouka">
-        <div class="about-image">
-        <img src="assests/mouka-building-design_1_qwxyvm.webp" alt="Mouka Building">
-        </div>
-    <div class="about-content">
-    <h2>About Mouka</h2>
-    <p class="intro-text">
-        <strong>For decades, Mouka has been the silent partner in millions of Nigerian homes,
-        dedicated to the art and science of rest. We believe that a productive day begins
-        the night before, which is why we pour our expertise into every fiber, foam, and fabric
-        we produce.</strong>
-    </p>
-    <p>
-        <strong>Our approach is simple: We combine cutting-edge sleep technology with a deep understanding
-        of human ergonomics. Whether you need the firm support of an orthopedic mattress or the 
-        plush embrace of our luxury pillows, our products are engineered to align with your lifestyle
-        and body's specific needs.
-        We don't just manufacture mattresses; we craft the sanctuary where you recharge, dream, and find peace.</strong>
-    </p>
-    <p>
-        <strong>Discover the pinnacle of personalized comfort, curated exclusively for you. 
-         Welcome to Mouka — where your comfort is our calling!</strong>
-    </p>
-    </div>
-    </div>
-    </section>
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <img src="assests/feature-superb-comfort.svg" alt="">
+                    </div>
+                    <h3>Superb Comfort</h3>
+                    <p>Because everyone is unique, we have created various products to suit different body types, comfort levels, and budgets.</p>
+                </div>
+            </section>
 
-    <section class="products">
-        <div class="sleep">
-        <h1>Our Sleep Essentials</h1>
-        </div>
-        <div class="product-grid">  
-        <div class="product-card">
-        <img src="assests/Eco-Comfy-fibre-mattress.jpg" alt="Mouka Mattresses">
-        <div class="content">
-        <h4>Mattresses</h4>
-        <p><i><h3>The foundation of Mouka since 1959 — premium mattresses with high-density foam, breathable layers, and durable covers. From everyday comfort to luxury pillow-top, they deliver cool, restful sleep and long-lasting support.</h3></i></p>
-        <ul>
-          <li>High-density foam & spring options</li>
-          <li>Breathable for hot climates</li>
-          <li>5-year core warranty on select models</li>
-        </ul>
-        <a href="mattresses.html" class="btn">Shop Mattresses</a>
-        </div>
-        </div>     
-      <div class="product-card">
-      <img src="assests/y29t3lly2cadlgjzauws.webp" alt="Mouka Pillows">
-      <div class="content">
-        <h4>Pillows</h4>
-        <p><i><h3>Support your head and neck with Mouka pillows — memory foam for contouring, fiber for softness, bio for wellness, or classic for firmness. Promotes better posture, reduces stiffness, and ensures hypoallergenic, breathable comfort.</h3></i></p>
-        <ul>
-          <li>Royal Memory Foam, Cozy Fiber, Bio, Crown</li>
-          <li>Neck support & pressure relief</li>
-          <li>Easy to clean & durable</li>
-        </ul>
-        <a href="pillows.html" class="btn">Shop Pillows</a>
-        </div>
-      </div>      
-      <div class="product-card">
-        <img src="assests/Sea9dc3531ae14f3d837772cb7c5cab0aA.webp" alt="Mouka Bedsheets">
-        <div class="content">
-        <h4>Bedsheets</h4>
-        <p><i><h3>Soft, breathable Mouka bedsheets in cotton blends that feel luxurious and stay cool in humid weather. Wrinkle-resistant, fade-proof, and machine-washable — perfect for daily use and pairing with duvets.</h3></i></p>
-        <ul>
-          <li>Smooth & skin-friendly</li>
-          <li>Breathable for tropical nights</li>
-          <li>Fitted & flat styles available</li>
-        </ul>
-        <a href="bedsheets.html" class="btn">Shop Bedsheets</a>
-        </div>
-      </div>     
-      <div class="product-card">
-        <img src="assests/360_F_153066885_NGYwEqImA0bagBH1zws6hqpTBPL78jaM.jpg" alt="Mouka Duvets">
-        <div class="content">
-        <h4>Duvets</h4>
-        <p><i><h3>Cozy, lightweight Mouka duvets with quilted covers for warmth without overheating. Ideal for all seasons, they come in sets with pillowcases — creating an inviting, easy-care bed setup.</h3></i></p>
-        <ul>
-          <li>All-season comfort & insulation</li>
-          <li>Soft, pilling-resistant fabrics</li>
-          <li>Sets with matching pillowcases</li>
-        </ul>
-        <a href="duvets.html" class="btn">Shop Duvets</a>
-        </div>
-      </div>     
-      <div class="product-card">
-        <img src="assests/xwgg8gcse2znd3ivlkpe.webp" alt="Mouka Orthopaedic">
-        <div class="content">
-        <h4>Orthopaedic</h4>
-        <p><i><h3>Mouka's specialised orthopaedic range (like Wellbeing Regal/Regina) provides firm support for back, spine, and joint health. Reduces pressure points, alleviates pain, and promotes proper alignment — endorsed for ergonomic quality and ideal for those needing extra lumbar support.</h3></i></p>
-        <ul>
-          <li>Extra-firm high-density foam</li>
-          <li>Spinal alignment & pain relief</li>
-          <li>Breathable quilted covers</li>
-        </ul>
-        <a href="orthopaedic.html" class="btn">Shop Orthopaedic</a>
-        </div>
-      </div>
-     
-      <div class="product-card">
-      <img src="assests/victoria-single-bed.webp" alt="Mouka Bedframe">
-      <div class="content">
-        <h4>Bedframes</h4>
-        <p><i><h3>Sturdy bedframes compatible with Mouka mattresses — durable wood or metal designs with modern or storage options. Provides a solid, stylish base that elevates your mattress and completes the bedroom setup for maximum comfort and stability.</h3></i></p>
-        <ul>
-          <li>Strong & stable construction</li>
-          <li>Various sizes to match mattresses</li>
-          <li>Perfect foundation for Mouka products</li>
-        </ul>
-        <a href="bedframes.html" class="btn">Shop Bedframes</a>
-      </div>
-      </div>
-      </div>  
-    </section>
+            <section class="about-mouka" id="About">
+                <div class="container-about-mouka">
+                    <div class="about-image">
+                        <img src="assests/mouka-building-design_1_qwxyvm.webp" alt="Mouka Building">
+                    </div>
+                    <div class="about-content">
+                        <h2>About Mouka</h2>
+                    <p class="intro-text">
+                        <strong>For decades, Mouka has been the silent partner in millions of Nigerian homes,
+                        dedicated to the art and science of rest. We believe that a productive day begins
+                        the night before, which is why we pour our expertise into every fiber, foam, and fabric
+                        we produce.</strong>
+                    </p>
+                    <p>
+                        <strong>Our approach is simple: We combine cutting-edge sleep technology with a deep understanding
+                        of human ergonomics. Whether you need the firm support of an orthopedic mattress or the 
+                        plush embrace of our luxury pillows, our products are engineered to align with your lifestyle
+                        and body's specific needs.
+                        We don't just manufacture mattresses; we craft the sanctuary where you recharge, dream, and find peace.</strong>
+                    </p>
+                    <p>
+                        <strong>Discover the pinnacle of personalized comfort, curated exclusively for you. 
+                        Welcome to Mouka — where your comfort is our calling!</strong>
+                    </p>
+                    </div>
+                </div>
+            </section>
 
-    <section class="benefits">
-    <div class="benefit-container">
-        <h2>Why Nigerians Choose Mouka</h2>
-        <div class="benefits-grid">
-    <div class="benefit-item">
-        <h3>Cool Sleep in Nigerian Heat</h3>
-        <p>Breathable foams keep you comfortable even during hot nights.</p>
-    </div>
-    <div class="benefit-item">
-        <h3>Lasts Longer</h3>
-        <p>High-density materials + 5-year warranty — built for 10+ years of use.</p>
-    </div>
-    <div class="benefit-item">
-        <h3>Back Pain Relief</h3>
-        <p>Orthopaedic designs support your spine and reduce morning aches.</p>
-    </div>
-    <div class="benefit-item">
-        <h3>Nationwide Delivery</h3>
-        <p>Fast 24-hour options in major cities, reliable across all states.</p>
-    </div>
-    </div>
-    </div>
-    </section>
+            <section class="products">
+                <div class="sleep">
+                    <h1>Our Sleep Essentials</h1>
+                </div>
+                <div class="product-grid">  
+                    <div class="product-card fade-in delay-3">
+                        <img src="assests/Eco-Comfy-fibre-mattress.jpg" alt="Mouka Mattresses">
+                        <div class="content">
+                            <h4>Mattresses</h4>
+                            <p><i><h3>The foundation of Mouka since 1959 — premium mattresses with high-density foam, breathable layers, and durable covers. From everyday comfort to luxury pillow-top, they deliver cool, restful sleep and long-lasting support.</h3></i></p>
+                            <ul>
+                                <li>High-density foam & spring options</li>
+                                <li>Breathable for hot climates</li>
+                                <li>5-year core warranty on select models</li>
+                            </ul>
+                            <a href="mattresses.html" class="btn">Shop Mattresses</a>
+                        </div>
+                    </div>     
+                    <div class="product-card fade-in delay-1">
+                        <img src="assests/y29t3lly2cadlgjzauws.webp" alt="Mouka Pillows">
+                        <div class="content">
+                            <h4>Pillows</h4>
+                            <p><i><h3>Support your head and neck with Mouka pillows — memory foam for contouring, fiber for softness, bio for wellness, or classic for firmness. Promotes better posture, reduces stiffness, and ensures hypoallergenic, breathable comfort.</h3></i></p>
+                            <ul>
+                                <li>Royal Memory Foam, Cozy Fiber, Bio, Crown</li>
+                                <li>Neck support & pressure relief</li>
+                                <li>Easy to clean & durable</li>
+                            </ul>
+                            <a href="pillows.html" class="btn">Shop Pillows</a>
+                        </div>
+                    </div>      
+                    <div class="product-card fade-in delay-2">
+                        <img src="assests/Sea9dc3531ae14f3d837772cb7c5cab0aA.webp" alt="Mouka Bedsheets">
+                        <div class="content">
+                            <h4>Bedsheets</h4>
+                            <p><i><h3>Soft, breathable Mouka bedsheets in cotton blends that feel luxurious and stay cool in humid weather. Wrinkle-resistant, fade-proof, and machine-washable — perfect for daily use and pairing with duvets.</h3></i></p>
+                        <ul>
+                            <li>Smooth & skin-friendly</li>
+                            <li>Breathable for tropical nights</li>
+                            <li>Fitted & flat styles available</li>
+                        </ul>
+                        <a href="bedsheets.html" class="btn">Shop Bedsheets</a>
+                        </div>
+                    </div>     
+                    <div class="product-card fade-in delay-3">
+                        <img src="assests/360_F_153066885_NGYwEqImA0bagBH1zws6hqpTBPL78jaM.jpg" alt="Mouka Duvets">
+                        <div class="content">
+                            <h4>Duvets</h4>
+                            <p><i><h3>Cozy, lightweight Mouka duvets with quilted covers for warmth without overheating. Ideal for all seasons, they come in sets with pillowcases — creating an inviting, easy-care bed setup.</h3></i></p>
+                        <ul>
+                            <li>All-season comfort & insulation</li>
+                            <li>Soft, pilling-resistant fabrics</li>
+                            <li>Sets with matching pillowcases</li>
+                        </ul>
+                        <a href="duvets.html" class="btn">Shop Duvets</a>
+                        </div>
+                    </div>     
+                    <div class="product-card fade-in delay-2">
+                        <img src="assests/xwgg8gcse2znd3ivlkpe.webp" alt="Mouka Orthopaedic">
+                        <div class="content">
+                            <h4>Orthopaedic</h4>
+                            <p><i><h3>Mouka's specialised orthopaedic range (like Wellbeing Regal/Regina) provides firm support for back, spine, and joint health. Reduces pressure points, alleviates pain, and promotes proper alignment — endorsed for ergonomic quality and ideal for those needing extra lumbar support.</h3></i></p>
+                        <ul>
+                            <li>Extra-firm high-density foam</li>
+                            <li>Spinal alignment & pain relief</li>
+                            <li>Breathable quilted covers</li>
+                        </ul>
+                        <a href="orthopaedic.html" class="btn">Shop Orthopaedic</a>
+                        </div>
+                    </div>
+            
+                    <div class="product-card fade-in delay-1">
+                        <img src="assests/victoria-single-bed.webp" alt="Mouka Bedframe">
+                        <div class="content">
+                            <h4>Bedframes</h4>
+                            <p><i><h3>Sturdy bedframes compatible with Mouka mattresses — durable wood or metal designs with modern or storage options. Provides a solid, stylish base that elevates your mattress and completes the bedroom setup for maximum comfort and stability.</h3></i></p>
+                        <ul>
+                            <li>Strong & stable construction</li>
+                            <li>Various sizes to match mattresses</li>
+                            <li>Perfect foundation for Mouka products</li>
+                        </ul>
+                        <a href="bedframes.html" class="btn">Shop Bedframes</a>
+                        </div>
+                    </div>
+                </div>  
+            </section>
 
-    <section class="testimonials">
-    <h2>What Our Sleepers Say</h2>
-    <div class="testi-grid">
-    <div class="testi-card">
-        <p>"My back pain disappeared after just one week on the Wellbeing mattress. Truly a life changer."</p>
-        <br><strong>- Kene O. (Lagos)</strong>
-    </div>
-    <div class="testi-card">
-        <p>"The delivery was fast, and the Regina mattress is so comfortable. My kids love their Dreamtime beds too!"</p>
-        <br><strong>- Ugochukwu A. (Abuja)</strong>
-    </div>
-    <div class="testi-card">
-        <p>"High quality and durable. I've had my Mouka for 5 years and it still feels brand new."</p>
-        <br><strong>- Tunde W. (Ibadan)</strong>
-    </div>
-    <div class="testi-card">
-        <p>"Bought my Mouka Regal over 13 years ago for my mum—still firm and comfortable today. No body pains, just quality sleep every night. Mouka is the best!"</p>
-        <br><strong>- Eleazar O. (Delta)</strong>
-    </div>
-    <div class="testi-card">
-        <p>"I've been using my Mouka since 2013 and its still strong and comfortable-no sagging at all. The best choice ever!"</p>
-        <br><strong>- Umar M. (Kaduna)</strong>
-    </div>
-    <div class="testi-card">
-        <p>"After a long stressful day, nothing beats sinking into my Mouka orthopaedic mattress. No more morning aches, and it stays cool even in this Lagos heat."</p>
-        <br><strong>- Christiana (Lagos)</strong>
-    </div>
-    <div class="testi-card">
-        <p>"My dad's old Mouka mattress is over 20 years old and still in great shape—even the foam holds up perfectly. That's real durability!"</p>
-        <br><strong>- Akinpelu (Osogbo)</strong>
-    </div>
-    <div class="testi-card">
-        <p>"Switched to Mouka Regal for better support, and it's been a game-changer. Comfortable, firm where it needs to be, and my whole family sleeps better now."</p>
-        <br><strong>- Aisha B. (Enugu)</strong>
-    </div>
-    </div>
-    </section>
+            <section class="benefits">
+                <div class="benefit-container">
+                    <h2>Why Nigerians Choose Mouka</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <h3>Cool Sleep in Nigerian Heat</h3>
+                            <p>Breathable foams keep you comfortable even during hot nights.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>Lasts Longer</h3>
+                            <p>High-density materials + 5-year warranty — built for 10+ years of use.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>Back Pain Relief</h3>
+                            <p>Orthopaedic designs support your spine and reduce morning aches.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>Nationwide Delivery</h3>
+                            <p>Fast 24-hour options in major cities, reliable across all states.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section class="faq-container">
-    <h2 class="faq-title">Frequently Asked Questions</h2>    
-    <div class="faq-content">
-    <div class="faq-group">
-        <p class="faq-q"><strong> What sizes are available?</strong></p>
-        <p class="faq-a">Common sizes: 4ft x 6ft, 4.5ft x 6ft, 6ft x 6ft, and more. Custom options available in showrooms.</p>
-    </div>
-    <div class="faq-group">
-        <p class="faq-q"><strong> How long is the warranty?</strong></p>
-        <p class="faq-a">5-year core warranty on most models. Covers manufacturing defects.</p>
-    </div>
-    <div class="faq-group">
-        <p class="faq-q"><strong> Are they good for hot weather?</strong></p>
-        <p class="faq-a">Yes — our foams are breathable and designed for Nigerian climates.</p>
-    </div>
-    <div class="faq-group">
-        <p class="faq-q"><strong> Do you deliver nationwide?</strong></p>
-        <p class="faq-a">Yes, fast delivery across all states, with 24-hour options in major cities like Lagos.</p>
-    </div>
-    <div class="faq-group">
-        <p class="faq-q"><strong> Is it good for back pain?</strong></p>
-        <p class="faq-a">Yes — orthopedic models support spine alignment and reduce aches.</p>
-    </div>
-    <div class="faq-group">
-        <p class="faq-q"><strong> What's the return policy?</strong></p>
-        <p class="faq-a">Usually 14-30 day comfort trial; exchange if not right.</p>
-    </div>
-    <div class="faq-group">
-        <p class="faq-q"><strong> Good for couples?</strong></p>
-        <p class="faq-a">Yes - larger sizes (6 x 6ft+) reduce motion transfer</p>
-    </div>
-    </div>
-</section>
-</main>
-    <footer class="mouka-footer">
-        <div class="footer-content">
-        <div class="footer-brand">
-            <h2>MOUKA</h2>
-            <p>Discover the pinnacle of personalized comfort, curated exclusively for you.</p>
-        </div>
-        <div class="footer-links">
-        <h3>Our Products</h3>
-            <ul>
-                <li><a href="#">Mattresses</a></li>
-                <li><a href="#">Pillows</a></li>
-                <li><a href="#">Bedsheets</a></li>
-                <li><a href="#">Duvets</a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-        <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-        <h3>Contact Us</h3>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div>
-        </div>
-    <div class="footer-bottom">
-            <p>&copy; 2026 Mouka Limited. All rights reserved. | Made for Comfort.</p>
-        </div>
-    </footer>
+            <section class="testimonials">
+                <h2>What Our Sleepers Say</h2>
+                <div class="testi-grid">
+                    <div class="testi-card">
+                        <p>"My back pain disappeared after just one week on the Wellbeing mattress. Truly a life changer."</p>
+                        <br><strong>- Kene O. (Lagos)</strong>
+                    </div>
+                    <div class="testi-card">
+                        <p>"The delivery was fast, and the Regina mattress is so comfortable. My kids love their Dreamtime beds too!"</p>
+                        <br><strong>- Ugochukwu A. (Abuja)</strong>
+                    </div>
+                    <div class="testi-card">
+                        <p>"High quality and durable. I've had my Mouka for 5 years and it still feels brand new."</p>
+                        <br><strong>- Tunde W. (Ibadan)</strong>
+                    </div>
+                    <div class="testi-card">
+                        <p>"Bought my Mouka Regal over 13 years ago for my mum—still firm and comfortable today. No body pains, just quality sleep every night. Mouka is the best!"</p>
+                        <br><strong>- Eleazar O. (Delta)</strong>
+                    </div>
+                    <div class="testi-card">
+                        <p>"I've been using my Mouka since 2013 and its still strong and comfortable-no sagging at all. The best choice ever!"</p>
+                        <br><strong>- Umar M. (Kaduna)</strong>
+                    </div>
+                    <div class="testi-card">
+                        <p>"After a long stressful day, nothing beats sinking into my Mouka orthopaedic mattress. No more morning aches, and it stays cool even in this Lagos heat."</p>
+                        <br><strong>- Christiana (Lagos)</strong>
+                    </div>
+                    <div class="testi-card">
+                        <p>"My dad's old Mouka mattress is over 20 years old and still in great shape—even the foam holds up perfectly. That's real durability!"</p>
+                        <br><strong>- Akinpelu (Osogbo)</strong>
+                    </div>
+                    <div class="testi-card">
+                        <p>"Switched to Mouka Regal for better support, and it's been a game-changer. Comfortable, firm where it needs to be, and my whole family sleeps better now."</p>
+                        <br><strong>- Aisha B. (Enugu)</strong>
+                    </div>
+                </div>
+            </section>
 
-    <script src="js/script.js"></script>
-</body>
+            <section class="faq-container">
+                <h2 class="faq-title">Frequently Asked Questions</h2>    
+                <div class="faq-content">
+                    <div class="faq-group">
+                        <p class="faq-q"><strong> What sizes are available?</strong></p>
+                        <p class="faq-a">Common sizes: 4ft x 6ft, 4.5ft x 6ft, 6ft x 6ft, and more. Custom options available in showrooms.</p>
+                    </div>
+                    <div class="faq-group">
+                        <p class="faq-q"><strong> How long is the warranty?</strong></p>
+                        <p class="faq-a">5-year core warranty on most models. Covers manufacturing defects.</p>
+                    </div>
+                    <div class="faq-group">
+                        <p class="faq-q"><strong> Are they good for hot weather?</strong></p>
+                        <p class="faq-a">Yes — our foams are breathable and designed for Nigerian climates.</p>
+                    </div>
+                    <div class="faq-group">
+                        <p class="faq-q"><strong> Do you deliver nationwide?</strong></p>
+                        <p class="faq-a">Yes, fast delivery across all states, with 24-hour options in major cities like Lagos.</p>
+                    </div>
+                    <div class="faq-group">
+                        <p class="faq-q"><strong> Is it good for back pain?</strong></p>
+                        <p class="faq-a">Yes — orthopedic models support spine alignment and reduce aches.</p>
+                    </div>
+                    <div class="faq-group">
+                        <p class="faq-q"><strong> What's the return policy?</strong></p>
+                        <p class="faq-a">Usually 14-30 day comfort trial; exchange if not right.</p>
+                    </div>
+                    <div class="faq-group">
+                        <p class="faq-q"><strong> Good for couples?</strong></p>
+                        <p class="faq-a">Yes - larger sizes (6 x 6ft+) reduce motion transfer</p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
+        <footer class="mouka-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>MOUKA</h2>
+                    <p>Discover the pinnacle of personalized comfort, curated exclusively for you.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Our Products</h3>
+                    <ul>
+                        <li><a href="bed.html">Mattresses</a></li>
+                        <li><a href="pillows.html">Pillows</a></li>
+                        <li><a href="linens.html">Bed Linens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Policy</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li class="socials">
+                            <img src="assests/whatsappV4.svg" height="20" alt="">
+                            <a href="https://wa.me/2348147799683">08147799683</a></li>
+                        <li class="socials">
+                            <img src="assests/phone--voice.svg" height="20" alt="">
+                            <a href="tel:08063917752">08063917752</a></li>
+                        <li class="socials">
+                            <img src="assests/facebook-logo-realistic-social-media-icon-logotype-free-free-png.webp" height="25" alt="">
+                            <a href="https://www.facebook.com/moukamattresses">Mouka</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mouka Limited. All rights reserved. | Made for Comfort.</p>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
 </html>

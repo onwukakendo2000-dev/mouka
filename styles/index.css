@@ -12,13 +12,13 @@ ul {
   padding: 0;
 }
 
+/* Header */
 .heading{
   display: flex;
-  padding: 15px;
-  padding-left: 100px;
-  gap: 350px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
   position: relative; 
-  
 }
 
 
@@ -45,8 +45,39 @@ ul {
 
 .hamburger{
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.sidebar-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 85vh;
+  width: 300px;
+  z-index: 999;
+  background-color: rgb(255, 255, 255,0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+
+}
+
+.sidebar li a{
+  width: 100%;
+}
+
+.sidebar svg .hamburger svg {
+  pointer-events: none;
 }
 .nav-item{
   color: #317833;   
@@ -57,12 +88,14 @@ ul {
   color: #317833;
 }
 
+.nav-item li a:hover{
+  background-color: #f1f1f1;
+}
+
 .dropdown{
-  /* position: relative; */
   display: flex;
   color: #317833;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 10px;
   
 }
@@ -71,7 +104,6 @@ ul {
   gap: 10px;
   align-items: center;
 }
-
 
 .dropdown-menu{
   display: none;
@@ -82,7 +114,7 @@ ul {
   z-index: 1;
   list-style: none;
   padding: 10px 0;
-  margin-top: 205px;
+  margin-top: 160px;
   border-radius: 10px;
 }
 
@@ -97,29 +129,23 @@ ul {
   background-color: #f1f1f1;
 }
 
-
 .dropdown:hover .dropdown-menu{
   display: block;
 }
 
-/*Responsive Style*/
-@media (max-width: 1024px) {
-.auth{position: absolute; left: 30px;}
+.moukalogo{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
 
-
-@media (max-width: 768px) {
-  .hero-text h1 { font-size: 2.5rem; }
-  .all-nav { display: none; }
-  .hamburger{display: block; cursor: pointer; position: absolute; right: 20px;}
-  .auth{position: absolute; left: 10px;}
- }
- 
- 
 .auth{
-  cursor: pointer; 
+  cursor: pointer;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
-
 
 .button1{
   border: 1px solid white; 
@@ -129,9 +155,9 @@ ul {
   width: 100px;
   cursor: pointer;
   color: white;  
-  
 }
 
+/* Section - Hero */
 .hero {
   padding: 120px 8%;
   background: linear-gradient(135deg, #00990a 0%, #48d56e 100%);
@@ -214,12 +240,7 @@ ul {
   
 }
 
-/*Responsive Style*/
-@media (max-width: 768px) {
-  .stat-card{flex-direction: column;}
-
-}
-
+/* Section - Features */
 .features-section {
   display: flex;
   justify-content: space-around;
@@ -231,7 +252,6 @@ ul {
   
 }
 
-
 .feature-card {
   flex: 1;
   min-width: 200px; 
@@ -239,7 +259,6 @@ ul {
   text-align: center;
   font-family: sans-serif;
 }
-
 
 .icon-circle {
   width: 60px;
@@ -270,13 +289,7 @@ ul {
   line-height: 1.5;
 }
 
-/* Responsive Style */
-@media (max-width: 768px) {
-.features-section {
-  flex-direction: column;
-  align-items: center;
-  }
-}
+/* section - About Mouka */
 .about-mouka {
   background-color: #ffffff;
   padding: 50px 0;
@@ -288,7 +301,6 @@ ul {
   max-width: 1300px;
   margin: 0 auto;
   overflow: hidden;
-  
 }
 
 .about-image {
@@ -333,13 +345,12 @@ ul {
   text-align: center;
 }
 
-  /* Products Section */
+/* Section - Products */
 .products {
   padding: 60px 0;
   background: #fafbfc;
   text-align: center;
   margin-top: 60px;
-  
 }
   
 .products .intro {
@@ -349,13 +360,6 @@ ul {
   margin: 0 auto 40px;
 }
 
-/* h2 {
-    font-size: 2.5em;
-    color: #2e7d32;
-    margin-bottom: 50px;
-    text-align: center;
-  } */
-
 .sleep{
   color:  #4b4b4b; 
   padding-bottom: 90px;
@@ -363,7 +367,7 @@ ul {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-  /* Grid & Cards */
+/* Grid & Cards */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -385,11 +389,38 @@ ul {
   height: 100%;
   transition: all 0.7s ease;
   transform: translateY(0) scale(1);
-  opacity: 1;
+  opacity: 0;
 }
 
 .product-card:hover {
   transform: translateY(-10px);
+}
+
+.fade-in.visible {
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
 }
 
 .product-card img {
@@ -412,7 +443,6 @@ ul {
   margin: 10px 0;
   font-size: 30px;
 }
-
 
 .product-card ul {
   text-align: left;
@@ -437,17 +467,15 @@ ul {
 background: #1d4d2b;
 }
 
+/* section - Benefits */
 .benefits {
   padding: 60px 0;
-  /* background: linear-gradient(to bottom, #e9f1e9, white); */
   text-align: center;
-  /* margin: 90px; */
 }
 
-  .benefit-container h2{
+.benefit-container h2{
   color: #4b4b4b;
   font-size: 40px;
-  /* font-weight: 700; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
 
@@ -474,6 +502,7 @@ background: #1d4d2b;
   font-weight: 550;
 }
 
+/* section - Testimonials */
 .testimonials {
   background: linear-gradient(to bottom , #61d681 0%, white 100%);
   padding: 80px 8%;
@@ -481,7 +510,6 @@ background: #1d4d2b;
 }
 
 .testimonials h2{
-  /* color: whitesmoke; */
   font-size: 50px;
 }
 
@@ -499,8 +527,7 @@ background: #1d4d2b;
   font-style: italic;
 }
 
-
-
+/* section - FAQ */
 .faq-container {
   max-width: 1300px;
   margin: 20px auto;
@@ -510,7 +537,6 @@ background: #1d4d2b;
 }
 
 .faq-title {
-  /* color: #4a7566;  */
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -529,7 +555,6 @@ background: #1d4d2b;
 }
 
 .faq-q {
-  /* color: #333; */
   margin: 0 0 4px 0;
   font-size: 15px;
 }
@@ -540,6 +565,7 @@ background: #1d4d2b;
   font-size: 15px;
 }
 
+/* Footer */
 .mouka-footer {
   background-color: #1d4d2b; 
   color: #ffffff;
@@ -548,7 +574,7 @@ background: #1d4d2b;
 
 .footer-content {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
@@ -600,10 +626,38 @@ background: #1d4d2b;
   margin: auto;  
 }
 
+.socials{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 /*Responsive Style*/
 @media (max-width: 768px) {
-.container-about-mouka {
+  /* heading */
+  .heading {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .all-nav { display: none; }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero-text h1 { font-size: 2.5rem; }
+
+  /* main */
+  .stat-card{flex-direction: column;}
+  
+  .features-section {
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .container-about-mouka {
   flex-direction: column;
   }
 
