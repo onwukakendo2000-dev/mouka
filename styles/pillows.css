@@ -12,6 +12,9 @@ ul {
   padding: 0;
 }
 
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* Header */
 .heading{
   display: flex;
@@ -54,7 +57,7 @@ ul {
   position: fixed;
   top: 0;
   right: 0;
-  height: 85vh;
+  height: 100vh;
   width: 300px;
   z-index: 999;
   background-color: rgb(255, 255, 255,0.7);
@@ -178,7 +181,7 @@ body {
 }
 
 .mouka-pillow h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   margin: 0 0 20px;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
@@ -207,7 +210,7 @@ section {
 .best {
   color: #025705;
   text-align: center;
-  font-size: 2.9em;
+  font-size: 2.2em;
   margin-bottom: 30px;
   position: relative;
   /* text-shadow: 2px 2px 8px rgba(0,0,0,0.5); */
@@ -252,7 +255,7 @@ section {
 .pick {
   color: #317833;
   text-align: center;
-  font-size: 2.9em;
+  font-size: 2.2em;
   margin-bottom: 30px;
   position: relative;
   padding-top: 40px;
@@ -283,7 +286,7 @@ section {
   padding: 20px;
 }
 .price {
-  font-size: 1.6em;
+  font-size: 1.1em;
   color: #222;
   font-weight: bold;
   margin: 12px 0;
@@ -310,7 +313,7 @@ section {
 
 .faq h2{
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   color: #025705;
 }
 .faq details {
@@ -323,7 +326,7 @@ section {
   font-weight: bold;
   cursor: pointer;
   color: #025705;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .footer-note {

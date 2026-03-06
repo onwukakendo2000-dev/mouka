@@ -12,6 +12,10 @@ ul {
   padding: 0;
 }
 
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Header */
 .heading{
   display: flex;
@@ -54,7 +58,7 @@ ul {
   position: fixed;
   top: 0;
   right: 0;
-  height: 85vh;
+  height: 100vh;
   width: 300px;
   z-index: 999;
   background-color: rgb(255, 255, 255,0.7);
@@ -506,8 +510,29 @@ background: #1d4d2b;
 .testimonials {
   background: linear-gradient(to bottom , #61d681 0%, white 100%);
   padding: 80px 8%;
-  text-align: center; 
+  text-align: center;
+  animation: fadeIn 0.7s ease forwards; 
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testi-card {
+  animation-delay: 0.1s;
+}
+
+.testimonials {
+  animation-delay: 0.8s;
+}
+
 
 .testimonials h2{
   font-size: 50px;
@@ -647,7 +672,7 @@ background: #1d4d2b;
     cursor: pointer;
   }
 
-  .hero-text h1 { font-size: 2.5rem; }
+  .hero-text h1 { font-size: 2.7rem; }
 
   /* main */
   .stat-card{flex-direction: column;}
