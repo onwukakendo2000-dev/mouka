@@ -86,8 +86,16 @@ body{
 .nav-item{
   color: #317833;   
   cursor: pointer;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 }
+
+.svg-sidebar{
+  color: red;
+}
+
 .nav-item a{
   color: #317833;
 }
@@ -96,11 +104,17 @@ body{
   background-color: #f1f1f1;
 }
 
+.svg{
+  display: flex;
+  /* align-items: center; */
+  /* gap: 10px; */
+}
+
 .dropdown{
   display: flex;
   color: #317833;
   align-items: center;
-  gap: 10px;
+  gap: 3px;
   
 }
 .our-products{
