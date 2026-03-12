@@ -82,11 +82,16 @@ body{
 .sidebar svg .hamburger svg {
   pointer-events: none;
 }
+
 .nav-item{
   color: #317833;   
   cursor: pointer;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 }
+
 .nav-item a{
   color: #317833;
 }
@@ -99,7 +104,7 @@ body{
   display: flex;
   color: #317833;
   align-items: center;
-  gap: 10px;
+  gap: 3px;
   
 }
 .our-products{
