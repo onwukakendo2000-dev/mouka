@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 130" width="200" height="130">
+  <!-- O letter -->
+  <text x="10" y="115" font-family="Georgia, serif" font-size="120" font-weight="900" fill="#1a1a1a" letter-spacing="-5">O</text>
+  <!-- V letter -->
+  <text x="95" y="115" font-family="Georgia, serif" font-size="120" font-weight="900" fill="#1a1a1a">V</text>
+  <!-- Gold swoosh arc -->
+  <path d="M 5 55 Q 100 -10 195 50" stroke="#e8940a" stroke-width="14" fill="none" stroke-linecap="round"/>
+</svg>
