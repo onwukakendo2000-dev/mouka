@@ -696,6 +696,10 @@ background: #447e56;
   align-items: center;
   }
 
+  .faq-title {
+    font-size: 35px;
+  }
+
   .container-about-mouka {
   flex-direction: column;
   }

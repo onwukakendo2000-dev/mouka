@@ -209,7 +209,7 @@ body {
   margin-bottom: 2rem;
     }
 .btn {
-  background: #006400;
+  background: #1a431a;
   color: white;
   padding: 15px 40px;
   border: none;
@@ -303,7 +303,7 @@ background: #004d00;
   text-align: center;
 }
 .product-info h3 {
-  color: #006400;
+  /* color: #006400; */
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
@@ -316,7 +316,7 @@ background: #004d00;
   display: block;
   font-size: 1.3rem;
   font-weight: bold;
-  color: #006400;
+  /* color: #006400; */
   margin-bottom: 15px;
 }
 
@@ -342,7 +342,7 @@ background: #004d00;
 }
 
 .mouka-footer {
-  background-color: #1d4d2b; 
+  background-color: black; 
   color: #ffffff;
   padding: 60px 20px 20px;
 }
@@ -356,7 +356,7 @@ background: #004d00;
 }
 
 .footer-brand h2 {
-  color: #ffcc00; 
+  color: white; 
   margin-bottom: 15px;
   font-size: 1.8rem;
 }
@@ -372,7 +372,7 @@ background: #004d00;
   margin-bottom: 20px;
   display: inline-block;
   padding-bottom: 5px;
-  color:  #ffcc00;
+  color:  white;
 }
 
 .footer-links ul {
@@ -401,6 +401,8 @@ background: #004d00;
   margin: auto;  
 }
 
+
+
 .socials{
   display: flex;
   align-items: center;
@@ -423,6 +425,14 @@ background: #004d00;
   
   .hero h1 {
     font-size: 2.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.0rem; 
+  }
+
+  .carousel-section h2 {
+    font-size: 1.8rem;
   }
 
   .hero p {
